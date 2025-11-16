@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/app_background">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/anton"
+        android:paddingTop="30dp"
+        android:paddingBottom="8dp"
+        android:text="❤️My Princess Gallery❤️"
+        android:textAlignment="center"
+        android:textSize="33sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="760dp"
+        android:backgroundTint="@color/peach"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
